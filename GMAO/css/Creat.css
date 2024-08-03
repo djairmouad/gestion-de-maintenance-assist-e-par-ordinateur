@@ -1,0 +1,210 @@
+:root{
+    --mainColor:#E8D39A;
+    --SecondeColor:#EAEAEA;
+    --transition:0.3s;
+    --bacground:#ececec;
+    }
+    html{
+    scroll-behavior: smooth;
+    }
+    body{
+        /* width: 99%;
+        height: 100%;
+        position: relative; */
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+        /* @media (min-width: 768px) {
+        .container{
+        width:750px ;
+        }
+        }
+        @media (min-width: 992px) {
+        .container{
+        width:970px ;
+        }
+        }
+        @media (min-width: 1200px) {
+        .container{
+        width: 1170px ;
+        }
+        } */
+.all{
+    height: 440px;
+    width: 800px;
+    background: linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 80%, transparent 80%);
+    display: flex;
+    position: relative;
+}
+.image{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.image .img1{
+    /* b74c8225-fb57-4667-adec-539a1f5ebfe1 1 */
+    position: absolute;
+    top: 3px;
+    padding-left: 2px;
+    width: 53px;
+    height: 38px;
+    background: url(b74c8225-fb57-4667-adec-539a1f5ebfe1.png);
+    mix-blend-mode: darken;
+}
+.image .img2{   /* 55f167b7-2b43-47ab-8e0b-b00bb734c5c4 1 */
+    position: absolute;
+    margin-left: 62px;
+    top: 33%;
+    width: 250px;
+    height: 250px;
+    background: url(55f167b7-2b43-47ab-8e0b-b00bb734c5c4.jpg);
+    mix-blend-mode: multiply;
+    z-index: 5;
+
+}
+.image h2{
+    /* Gestion de maintenance assistée par ordinateur */
+
+    position: absolute;
+    top: 10%;
+    margin-left: 70px;
+    z-index: 8;
+    width: 266px;
+    height: 49px;
+    font-family: 'Kaisei Decol';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+
+}
+.creat{
+    border-radius: 7%;
+    width: 700px;
+    background-color: var(--SecondeColor);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-left: 100px;
+    height: 100%;
+}
+.info,.info:nth-child(7).active,.info:nth-child(8).active{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px !important; 
+}
+.info h2{
+    font-family: 'Kaisei Decol';
+    font-weight: 700;
+    margin-bottom: 13px;
+    margin-top: 5px;
+}
+.info-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info:nth-child(7) ,.info:nth-child(8){
+   display: none;
+}
+
+
+.creat form .info:nth-child(5){
+    justify-content: flex-start;
+}
+.name{
+    position: relative;
+    width: 124px;
+    height: 18px;
+    outline: none;
+    display: block;
+}
+input{
+    position: relative;
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+}
+input[type="email"]{
+    width: 98%;
+    outline: none;
+} 
+.select{
+    width: 130px;
+    height: 24px;
+    outline: none;
+}
+input[type="number"] {
+width: 98%;
+outline: none;
+}
+input[type="password"] {
+    width: 98%;
+    outline: none;
+    }
+label{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Kaisei Decol';
+}
+input[type="submit"]{
+    background-color: #ccaa5c;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Kaisei Decol';
+}
+p{
+    font-weight:normal;
+    margin-bottom: 5px;
+}
+p a{
+        color: #056f9c;
+        text-decoration: none;
+        font-size: 16px;
+        margin-bottom: 2px;
+}
+@media(max-width: 992px){
+    .all{
+        width: 700px;
+    }
+    
+}
+@media (max-width:767px) {
+    .all {
+        display: flex;
+        justify-content: center;
+    }
+    form {
+        margin-left: 0px;
+        height: 100%;
+    }
+    .image {
+                display: none;
+            }
+    .creat{
+            height: fit-content;
+  }
+}
+/* input::placeholder{
+position: absolute;
+display: block;
+padding: 5px;
+top: -1px;
+z-index: 8;
+color: red;
+} */
